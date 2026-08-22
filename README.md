@@ -1,1 +1,3 @@
-# Step_semester_3
+# Step_semester_3:
+
+CONTAINS ALL THE CLASS PROBLEMS AND THE ASSIGNMENTS AS WELL
