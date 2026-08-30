@@ -1,3 +1,6 @@
+# Step_semester_3:
+
+CONTAINS ALL THE CLASS PROBLEMS AND THE ASSIGNMENTS AS WELL
 # STEP Semester 3
 
 A structured repository for maintaining Java programming practice, class exercises, and assignments completed as part of the **STEP / CodInClub program powered by BridgeLabz** during Semester 3.
