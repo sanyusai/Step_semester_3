@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+public class LibraryCatalogLookup {
+
+    static String findBook(String[][] catalog, String targetIsbn) {
+        int low = 0;
+        int high = catalog.length - 1;
+
+        while (low <= high) {
+            int mid = (low + high) / 2;
+
+            int result = catalog[mid][0].compareTo(targetIsbn);
+
+            if (result == 0) {
+                return catalog[mid][1];
+            } else if (result < 0) {
+                low = mid + 1;
+            } else {
+                high = mid - 1;
+            }
+        }
+
+        return "Not Found";
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String[][] catalog = {
+            {"0001112223", "Introduction to Algebra"},
+            {"0002223334", "Beginning Python"},
+            {"0003334445", "Classic Mythology"},
+            {"0004445556", "Data and Society"},
+            {"0005556667", "European History"}
+        };
+
+        System.out.print("Enter ISBN to search: ");
+        String isbn = sc.nextLine();
+
+        String result = findBook(catalog, isbn);
+
+        System.out.println("Book Title: " + result);
+
+        sc.close();
+    }
+}
+
